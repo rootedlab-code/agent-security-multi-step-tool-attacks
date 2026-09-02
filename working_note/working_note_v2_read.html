@@ -7804,6 +7804,10 @@ a.anchor-link {
 <h1 id="Provenance-Blindness-in-Tool-Using-LLM-Agents-%E2%80%94-a-Working-Note">Provenance-Blindness in Tool-Using LLM Agents — a Working Note<a class="anchor-link" href="#Provenance-Blindness-in-Tool-Using-LLM-Agents-%E2%80%94-a-Working-Note">¶</a></h1><h3 id="%E2%80%A6and-why-it-turned-out-to-be-a-property-of-the-stack,-not-of-the-model">…and why it turned out to be a property of the stack, not of the model<a class="anchor-link" href="#%E2%80%A6and-why-it-turned-out-to-be-a-property-of-the-stack,-not-of-the-model">¶</a></h3><p><strong>Martin Adrian Sebastian (rootedlab-code)</strong>
 <code>rootedlab@proton.me</code></p>
 <p><em>Working Note for the Kaggle competition <strong>AI Agent Security: Multi-Step Tool Attacks</strong>.</em></p>
+<p><em>The attack this note is about, and this notebook with its two rendered views, are released under
+MIT at <code>github.com/rootedlab-code/agent-security-multi-step-tool-attacks</code>. What that release does
+<strong>not</strong> contain is stated in §11, in the same place that says what this notebook can prove about
+itself.</em></p>
 <hr/>
 <p><strong>This notebook is the note.</strong> Every figure and every headline number in it is produced by a cell
 that reads an archived measurement envelope from <code>results/</code>; nothing is typed in from memory. It
@@ -9932,7 +9936,12 @@ read is the branch that happened: Final A scored zero, so the ranked entry is th
 about.</strong> The observation is <strong>11.505</strong> against a floor of <strong>11.3373</strong> — a ratio of <strong>1.0148</strong>. Not
 about twice as many candidates fit: about <strong>1.5%</strong> more did. In candidates, the stacked entry
 replayed <strong>755.8</strong> on the public gate and an implied <strong>767.0</strong> here, where the bracket predicted
-<strong>1724.0</strong>. The conclusion of this section survives and hardens — dominated, and dominated at the
+<strong>1724.0</strong>. <em>And that 1.5% is not a rise this note is allowed to read.</em> It is <strong>0.168</strong> points of
+row, which is <strong>0.14</strong> of the same 1.20-point resolution floor §6.1 publishes — the floor under which
+this note says nothing should be interpreted, and the one Final B's transfer was measured against
+three paragraphs ago at 0.0625. Both sit below it. So the honest statement is not that a few extra
+candidates fit: it is that the candidate count did not move at all, at the finest resolution this
+instrument has. The conclusion of this section survives and hardens — dominated, and dominated at the
 bottom of its own range rather than the top. The quantitative half does not, and it was the half
 carried by two independent counters that agreed with each other.</p>
 <p><strong>The cause is in this note's own design, not in the counters, and that is the reusable part.</strong> The
@@ -11636,7 +11645,10 @@ over its own rates — in an empty directory, verified. So the checking machiner
 the shipped document by anyone holding it. What does <strong>not</strong> ship is the repository that produced
 the envelopes: the builders, the suite, the instruments named throughout this section. Until it is
 released, everything below describes an apparatus a reader cannot run, and this section claims no
-more than that.</p>
+more than that. What <em>is</em> released sits at
+<code>github.com/rootedlab-code/agent-security-multi-step-tool-attacks</code> under MIT: the attack exactly as
+it was submitted, and this notebook with its two rendered views — that is, the artefacts that were
+scored, and nothing that produced them.</p>
 <p>The alternative was to leave the release as an open item and publish anyway. We would rather demote
 the claim, because the other course leaves this note asserting a checkability it withholds — which
 is the exact failure it spends §7 and §10 documenting in other people's defenses, and the one place
@@ -11999,8 +12011,8 @@ Zhan, Liang, Ying, Kang. <em>InjecAgent: Benchmarking Indirect Prompt Injections
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>audit rules: imported from tools/collect_results.py
 
-notebook prose: 786/786 numeric literals resolve
-  749 to a claim in results/results_index.json
+notebook prose: 791/791 numeric literals resolve
+  754 to a claim in results/results_index.json
   18 to a recorded value in an envelope that predates the claims schema
   19 to a passage that names its own source (including 1 routed through unarchived())
 
