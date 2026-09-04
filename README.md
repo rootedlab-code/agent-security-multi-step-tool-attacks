@@ -27,8 +27,17 @@ enforces that on itself rather than asking to be trusted:
 
 Both run when you execute the notebook. It carries the claim index and the values its figures read in
 its second cell, so it runs standalone: verified in an empty directory, zero errors, both gates
-passing, 786 of 786 literals resolving. Three things reduce without the full apparatus, and each says
+passing, 824 of 824 literals resolving. Three things reduce without the full apparatus, and each says
 so in its own output rather than passing silently.
+
+## Revision of 2026-09-04
+
+§10 (Defenses) is restated after the private leaderboard resolved the note's first forward prediction
+against it: value provenance is **necessary and not sufficient**, and four defense classes replace the
+earlier two-axis framing, each with what it held against, what it did not, and its cost, in a table a
+defender can read alone. The change is made as dated corrections inside the note, not by rewriting it;
+the calibration gate now exempts only the chapters the note keeps as first posed. The same notebook
+runs as the current version of the note's Kaggle kernel.
 
 ## What is not here
 
