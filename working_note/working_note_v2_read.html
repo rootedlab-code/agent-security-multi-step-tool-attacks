@@ -7958,7 +7958,7 @@ gate we are scored against is named <code>persistent_provenance</code>. Our firs
 that no source produced — one user message, one egress call, no read of anything. <strong>A provenance
 defense cannot stop an exfiltration that has no provenance</strong>, so we predicted it would score non-zero
 on the private board, in the range 90.0 to 96.0, and named a zero as the falsifier that would matter
-most. ⚠ <em>Resolved 2026-09-02: it scored 0.000, and so did every submission in that family.</em> The
+most. <em>Resolved 2026-09-02: it scored 0.000, and so did every submission in that family.</em> The
 argument still holds; what failed is the premise that a gate carrying that name performs that check.
 Reading a defense's behaviour off its label is precisely the substitution the table below this list
 is about, made here by the people who assembled the table. §10b scores all three predictions against
@@ -9044,9 +9044,8 @@ controlled comparisons — and the one structural idea that did clear the floor 
 (§6.4). A benchmark
 intended to reward discovering <em>reproducible failure modes</em> also, unavoidably, rewards emitting them
 cheaply.</p>
-<blockquote>
-<p><strong>Addendum, 2026-08-28 — the archived instance this passage says it lacks now exists.</strong> The
-paragraph above prices a throughput lever at <strong>2.41×</strong> between two framings of the same
+<p><strong>The archived instance the paragraph above says it lacks now exists (measured 2026-08-28).</strong> It
+prices a throughput lever at <strong>2.41×</strong> between two framings of the same
 single-action attack and then declares, correctly at the time, that its four figures <em>predate the
 envelope schema and have no archived result to resolve against</em>. They now have a successor that is
 archived, paired <strong>within a single kernel</strong> at n=30, and taken on the bodies this note actually
@@ -9059,9 +9058,7 @@ measure when it was written.</p>
 <p>The sibling row still does not move — which is the same asymmetry §7.4 and §7.5 are about — so the
 caution in the last sentence above stands exactly as written: quoting the better row overstates a
 per-row lever, and the leaderboard mean is what is scored.</p>
-</blockquote>
-<blockquote>
-<p><strong>Addendum — the density discount is not one number, it is one per family, and the difference is
+<p><strong>The density discount is not one number, it is one per family, and the difference is
 three-fold.</strong> The scorer pays the cell bonus <strong>once per candidate</strong>, so inside a single candidate
 the first firing is worth its severity weight <em>plus two</em> and every later one is worth the weight
 alone. For exfiltration that is <strong>18</strong> then <strong>16</strong>, a discount of <strong>11%</strong>. For the confused deputy
@@ -9072,9 +9069,7 @@ lost more decisively than its exfiltration counterpart. Checked against a later 
 where the predicted and measured raw agree to the digit — three sends predicted at 4·3 + 2 =
 <strong>14.00</strong> and measured <strong>14.00</strong>; a fractional <strong>3.37</strong> sends predicted <strong>15.47</strong> and measured
 <strong>15.47</strong>.</p>
-</blockquote>
-<blockquote>
-<p><strong>Addendum — how much of the emitted turn is actually ours.</strong> The strongest version of this
+<p><strong>How much of the emitted turn is actually ours.</strong> The strongest version of this
 section's thesis is not an argument, it is a census. Taken item by item against the <strong>2000</strong>
 indices the record emits, and anchored on eight of eight cells of the measured floor, the
 <em>choosable</em> share of the scored turn is <strong>0.0782</strong> on one target and <strong>0.0781</strong> on the other:
@@ -9086,7 +9081,6 @@ the other, because <code>http</code> and <code>://</code> are already-formed mer
 remaining freedom in the scored emission is under a tenth of one turn, and it buys nothing.</strong> If
 the score is throughput and throughput is decode, then this section's question — <em>does it pay?</em> —
 has a floor under it that no framing can get beneath.</p>
-</blockquote>
 </div>
 </div>
 </div>
@@ -9235,8 +9229,8 @@ verified by fingerprint before and after, so whatever mix of rows and bodies the
 83.300 is <strong>11.6% fewer candidates per second of the same budget</strong> — a derivation with no premise
 about raw per candidate anywhere inside it.</p>
 <blockquote>
-<p><strong>⚠ Corrected 2026-08-28, and the note contradicted itself before we caught it.</strong> The three
-paragraphs that follow were first written with per-row absolutes — 926 candidates against 1033, at
+<p><strong>Read the three paragraphs that follow as a sensitivity analysis under an equal-rows reading that
+the shipped profile violates.</strong> They were first written with per-row absolutes — 926 candidates against 1033, at
 <strong>18 raw per candidate</strong>, giving 8.474 seconds per candidate before and 9.454 after. The 18 is
 false for one of the two rows of the profile in question. Its gemma leg asks for <strong>two</strong> posts and
 measures <strong>34.0</strong> raw per candidate at n=30, which is what §6.4 of this same note already said in
@@ -9438,12 +9432,12 @@ with nothing adopted, give −0.43 and −0.27 — zero inside the 1.266 spread.
 small positive terms, consistent with adopting a body that is close to neutral. Only the grid adopts
 something ruinous. Five out-of-sample points reconciling on one fitted constant is weak
 corroboration; it is still corroboration, and it was not guaranteed.</p>
-<p><strong>One number this section used to carry has been withdrawn.</strong> We reported that about 24% of the
-time spent searching "came out of replay". That figure divided lost replay seconds by an assumed
-probe count, and both halves are unsound: the probe count is unknown and capped, and — per the
+<p><strong>Replay ran about 11.6% slower per candidate, and that is the sound form of a number this section
+once carried and has withdrawn.</strong> The withdrawn form said that about 24% of the time spent searching
+"came out of replay"; it divided lost replay seconds by an assumed probe count, and both halves are
+unsound: the probe count is unknown and capped, and — per the
 paragraph above — no replay second was ever taken by generation, because the two clocks are
-independent. The quantity it was trying to name is real, and the sound version of it is the one
-already given: <strong>replay ran about 11.6% slower per candidate.</strong> The open question this section ends
+independent. The quantity it was trying to name is real, and its sound form is the one above. The open question this section ends
 on is <em>why a machine that has just spent up to an extra 5250 seconds inferring replays more slowly</em>.
 We now have about a quarter of an answer, measured after this section was first written and reported
 above: the slowdown is real, it is confined to one of the two rows, and it saturates. What remains
@@ -9559,6 +9553,20 @@ function and does not depend on how long anyone searched: the unique-cell channe
 static emitter before any search begins, and chaining is score-negative at equal model cost. That
 argument stands alone; the run is a check that nothing in it was overlooked at the budget we could
 afford, and §6.3's four preconditions are what say when the ranking should reverse.</p>
+<hr/>
+<p><strong>Record of changes to §6.3.</strong> <em>Superseded text, kept and dated. The section above is the
+current position; nothing quoted here is asserted.</em></p>
+<blockquote>
+<p><strong>2026-08-28.</strong> Three paragraphs of the search account were first written with per-row absolutes —
+926 candidates against 1033, at 18 raw per candidate, 8.474 seconds per candidate before and 9.454
+after. The 18 is false for the gemma leg of that profile, which asks for two posts and measures 34.0
+raw per candidate at n=30, as §6.4 already said; with 18 on one row and 34 on the other the per-row
+absolutes are not recoverable. They stand in the body labelled as a sensitivity analysis under the
+equal-rows reading. The 11.6% is not affected.</p>
+<p><strong>2026-08-28.</strong> The section carried the figure <em>"about 24% of the time spent searching came out of
+replay"</em>. It divided lost replay seconds by an assumed probe count, both unsound; it is withdrawn in
+favour of the ratio the body leads with, 11.6% slower replay per candidate.</p>
+</blockquote>
 </div>
 </div>
 </div>
@@ -9681,10 +9689,8 @@ after it.</strong> That is Figure 1, and it is the figure this project most need
 <p>The two-parameter linear model of §6.4 — <code>seconds = a·calls + b·tokens</code>, exactly determined by two
 anchors, zero degrees of freedom — is replaced by an empirical curve. We keep the direction of §6.4's
 lesson and drop its instrument.</p>
-<p><strong>So we priced the assumption rather than defending it.</strong> ⚠ <em>Corrected 2026-08-28: when this was
-written the end-to-end gateway run was the only measurement of the row imbalance that existed. There
-are now two, they disagree, and the disagreement is a body substitution rather than a
-contradiction.</em> The e2e timed each row on a body — the Harmony row on the forge, the other row on
+<p><strong>So we priced the assumption rather than defending it, and there are now two measurements of it,
+which disagree for a reason that is a body substitution rather than a contradiction.</strong> The e2e timed each row on a body — the Harmony row on the forge, the other row on
 the plain framing — and read <strong>1.228×</strong>, not 1.000; but the body it timed on the second row is not
 the one this profile sends. Measured on the two cells the record actually ships, paired at n=30 with
 zero spread, the ratio is <strong>1.032</strong>: the rows are very nearly balanced, which points the other way.
@@ -9797,6 +9803,15 @@ pooled figure. Decisive, on the instrument's own published floor, without asking
 to carry a precision it cannot. That is what "decisive either way" should have meant.</p>
 <p>It is also the fourth point of the cost curve above: the submission that closed the axis is the same
 one that priced it.</p>
+<hr/>
+<p><strong>Record of changes to §6.4.</strong> <em>Superseded text, kept and dated. The section above is the
+current position; nothing quoted here is asserted.</em></p>
+<blockquote>
+<p><strong>2026-08-28.</strong> When <em>"So we priced the assumption rather than defending it"</em> was first written, the
+end-to-end gateway run — 1.228× — was the only measurement of the row imbalance that existed. The
+paired n=30 measurement on the two cells the record ships, 1.032, came later; the body now states
+both and why they differ.</p>
+</blockquote>
 </div>
 </div>
 </div>
@@ -9892,8 +9907,7 @@ GPU harness measuring what the model actually emits for elicitation. Of three co
 survived permission analysis, elicitation measurement rejected one outright (a target model produced
 the wrong argument in 100% of trials), promoted a variant nobody had proposed, and confirmed the
 third at 30/30. None of that is visible from the permission side.</p>
-<blockquote>
-<p><strong>Addendum — a null result that can be heard, and why that is rare.</strong> §6.5 is about instruments
+<p><strong>A null result that can be heard, and why that is rare.</strong> §6.5 is about instruments
 that cannot hear the question. Here is the cleanest example this project owns of the opposite. A
 variant that <em>re-opened</em> the reasoning channel after the forged turn moved the decode cost by a
 factor of <strong>1.000</strong> over 30 paired repetitions — a perfect null. On its own that is unreadable: a
@@ -9904,9 +9918,7 @@ decode tokens to <strong>307.53</strong> and from <strong>1.00</strong> posts to
 reaches the model, the harness demonstrably registers what arrives through it, and the reopen
 simply has no work left to do. <strong>A null earns its interpretation from a positive control taken in
 the same run</strong>, and an instrument that cannot produce one cannot report a null at all.</p>
-</blockquote>
-<blockquote>
-<p><strong>Addendum — what a rejected parse actually does, measured rather than assumed.</strong> A natural
+<p><strong>What a rejected parse actually does, measured rather than assumed.</strong> A natural
 reading of a malformed model turn is that it voids the attempt. It does not, and the difference
 matters to anyone reasoning about this evaluator. Driven against the gateway's own replay loop by
 an agent raising the real parse error: a rejection at <strong>every</strong> turn returns a scored zero and no
@@ -9917,7 +9929,6 @@ the raw is banked before the episode ends. The archive agrees: one arm is parse-
 and banks <strong>14.00</strong> raw. <strong>A parse rejection is an episode ending, not a zeroing</strong> — which also
 means it is not an instrument: a designer hoping to read a row by making it fail to parse learns
 nothing, because failure and success return the same number.</p>
-</blockquote>
 </div>
 </div>
 </div>
@@ -9937,7 +9948,7 @@ computed on a branch where that hedge is worth almost nothing.</p>
 scored public <strong>41.570</strong>. The mail-only body finally selected as Final B (<code>saturate_routed_conf</code>,
 ref 55547202) scored <strong>25.860</strong> — <strong>1.61×</strong> less. On public score alone the choice is obvious and
 it is wrong.</p>
-<p>⚠ <em>Resolved 2026-09-02, and this section is no longer conditional.</em> The branch on which a hedge is
+<p><strong>Resolved 2026-09-02, and this section is no longer conditional.</strong> The branch on which a hedge is
 read is the branch that happened: Final A scored zero, so the ranked entry is the hedge. It took
 <strong>25.935</strong> and 51st place. The entry the public score would have chosen took <strong>11.505</strong> and 275th —
 <strong>14.430</strong> points and <strong>224</strong> places, for following the only signal the platform publishes.</p>
@@ -9967,6 +9978,8 @@ did not fall — so this is no test of whether cheaper candidates buy candidates
 the same emitter shows that they do: the mail-only body replayed <strong>1724.0</strong> candidates against the
 stacked body's <strong>755.8</strong>, a factor of <strong>2.281</strong>. The held-out gate supplies no test of §6.2's
 throughput law in either direction, and §10b's P2 should be read inside that limit. §10b scores it.</p>
+<p><em>What follows is the argument as it stood before the board was revealed. It is kept because its
+qualitative half held and its quantitative half failed, for the reason given above.</em></p>
 <p>Invert the score law and the reason appears. <code>publicScore</code> is the mean of the two rows and a row is
 <code>raw / 200</code>, so total raw across both rows is <code>publicScore × 400</code>:</p>
 <table>
@@ -10005,9 +10018,8 @@ twenty-two raw were the exfiltration. The gate matrix says so directly: on <code
 <code>hard:data-first</code> and <code>hard:egress-scan</code>, the stacked trace scores 6, exactly like the confused-deputy
 send (Figure 3).</p>
 <p>Bracket it honestly rather than claiming a number. A denied call <strong>ends the hop loop</strong>, so in that
-branch the stacked candidate is cheaper than it was on the public gate and more of them fit. When
-this was written we did not know how many more. ⚠ <em>Updated 2026-08-28: two independent counters now
-bound it, and they agree.</em> A permitted candidate pays two generations and a denied one pays a single
+branch the stacked candidate is cheaper than it was on the public gate and more of them fit. Two
+independent counters bound how many more, and they agree. A permitted candidate pays two generations and a denied one pays a single
 one; and measured in prompt tokens on the real environment, the denied arm costs <strong>857</strong> against
 <strong>1758</strong> — the second generation is about half of a candidate's prefill. So the denied branch runs a
 stacked candidate at roughly <strong>half</strong> the cost, i.e. about twice as many fit.</p>
@@ -10044,6 +10056,17 @@ of what you want — it is a biased one, and the bias is largest exactly for the
 be different.</strong> A benchmark that publishes per-row or per-guardrail scores removes it at no cost to
 the organizers. This is the third time in this note that a published aggregate hid the quantity that
 decided a choice, and the other two are §6.1 (no interval) and §6.4 (no cost model).</p>
+<hr/>
+<p><strong>Record of changes to §6.6.</strong> <em>Superseded text, kept and dated. The section above is the
+current position; nothing quoted here is asserted.</em></p>
+<blockquote>
+<p><strong>2026-08-28.</strong> The bracket paragraph first ended at <em>"when this was written we did not know how many
+more"</em>; the two counters that bound it — one generation against two, and 857 against 1758 prompt
+tokens — were measured afterwards and are now in the body.</p>
+<p><strong>2026-09-02.</strong> The section was written conditionally, before the board. Its resolution now opens it,
+and the bracket argument is kept below the resolution as the pre-reveal reasoning whose quantitative
+half failed.</p>
+</blockquote>
 </div>
 </div>
 </div>
@@ -10097,10 +10120,8 @@ intuition: the result with the small n is the <em>interesting</em> one, so it is
 and the one most likely to be quoted onward.</p>
 <p><strong>The cell below is a gate, not a table.</strong> It re-reads this notebook's own prose, finds every rate
 written as <code>x/n</code>, computes the interval, and <strong>fails the build</strong> if an under-determined rate appears
-in prose this build authored without its interval beside it. ⚠ <em>Narrowed 2026-09-04: the exemption
-is now the frozen chapters — §0–§5 as posed, and the superseded abstract — rather than everything
-this build did not author; a carried sentence in §10 had been quoting a superseded rate under the
-wider exemption, and the cell says so.</em> The threshold is pre-registered in the
+outside the frozen chapters — §0–§5 as posed, and the superseded abstract — without its interval
+beside it. The threshold is pre-registered in the
 cell, in words, before any number is computed — §8.3's rule turned on the paper. Its boundary is
 declared there too, because a gate that overstates its reach is the defect it exists to catch.</p>
 <p><strong>What this gate bounds is <em>disclosure</em>, not <em>validity</em> — and the objection it invites deserves an
@@ -10126,6 +10147,14 @@ bound or a coincidence. <strong>None was run.</strong> The reason is stated plai
 needs GPU hours and a scoring turnaround inside a fixed budget, and those hours went into the
 citations and the audit apparatus instead. That is a choice about where to spend a budget, not a
 claim that these sample sizes are adequate.</p>
+<hr/>
+<p><strong>Record of changes to §6.7.</strong> <em>Superseded text, kept and dated. The section above is the
+current position; nothing quoted here is asserted.</em></p>
+<blockquote>
+<p><strong>2026-09-04.</strong> The gate's exemption was narrowed from <em>"prose this build did not author"</em> to the
+frozen chapters — §0–§5 as posed, and the superseded abstract — because a carried sentence in §10 had
+been quoting a superseded rate under the wider exemption. The cell says so in its own scope note.</p>
+</blockquote>
 </div>
 </div>
 </div>
@@ -10139,11 +10168,16 @@ claim that these sample sizes are adequate.</p>
 <pre>
 pre-registered bar: half-width &gt; 0.1 is UNDER-DETERMINED   (Wilson 95%, z = 1.959964)
 
-     rate    point            Wilson 95%    half   verdict        written by
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>     rate    point            Wilson 95%    half   verdict        written by
    2/6       0.333   [0.097, 0.700]     0.302   UNDER-DETERMINED carried/frozen
    1/6       0.167   [0.030, 0.564]     0.267   UNDER-DETERMINED carried/frozen
-   5/5       1.000   [0.566, 1.000]     0.217   UNDER-DETERMINED authored+carried/frozen+patched
-   0/5       0.000   [0.000, 0.434]     0.217   UNDER-DETERMINED carried/frozen+patched
+   5/5       1.000   [0.566, 1.000]     0.217   UNDER-DETERMINED authored+carried/frozen
+   0/5       0.000   [0.000, 0.434]     0.217   UNDER-DETERMINED authored+carried/frozen
    6/18      0.333   [0.163, 0.563]     0.200   UNDER-DETERMINED carried/frozen+patched
   12/16      0.750   [0.505, 0.898]     0.197   UNDER-DETERMINED carried/frozen
    0/6       0.000   [0.000, 0.390]     0.195   UNDER-DETERMINED carried/frozen
@@ -10223,9 +10257,9 @@ attacker evading a <em>stronger</em> defense; it is the attacker choosing <em>wh
 <p><em>Defensive implication</em>: a monitor that aborts a plan at the first violation silently grants that
 choice. Evaluating the whole intended action sequence before executing any of it — or continuing to
 evaluate after a denial rather than short-circuiting — removes it. This costs the defender nothing in
-security and closes a degree of freedom that is otherwise free for the attacker. <em>(⚠ 2026-09-04:
-"nothing" is qualified in §10 — these agents emit one action per hop, not a plan, so evaluating the
-whole sequence is an interface change and not only a policy change.)</em></p>
+security and closes a degree of freedom that is otherwise free for the attacker. <em>(§10 qualifies
+"nothing": these agents emit one action per hop, not a plan, so evaluating the whole sequence is an
+interface change and not only a policy change.)</em></p>
 <p>We first reported that the ordering which evades better was also the one the models obeyed better —
 one target completed both actions in only 23% of trials when reversed. <strong>That did not reproduce.</strong>
 Re-measured at n=40 on the shipped index population, with both arms paired on the same index and the
@@ -10287,7 +10321,7 @@ the destination without ever writing the protocol — dropped one model to 0/30 
 because it appended a path fragment it had been shown. The evasion works by <strong>decomposition, not by
 obscurity</strong>; asking the model to invent the missing piece reintroduces exactly the variance the
 attacker was trying to remove.</p>
-<p><em>Addendum, 2026-08-28.</em> That variant is worse than a bad trade: it is a trade with nothing on the
+<p>That variant is worse than a bad trade: it is a trade with nothing on the
 other side, and both halves of the reason were found by executing the scoring code rather than
 reading it. First, the scheme is <strong>ours, not the tool's</strong> — the scorer's cell bucketer requires
 only the separator <code>://</code> to appear somewhere, so a destination written with any scheme at all, or
@@ -10413,10 +10447,7 @@ straight to the tool call. The construction exactly as we send it is in <code>at
 the model may decline.</strong> There is no persuasion in it, no forged authority, nothing the model could
 be trained to refuse without also refusing to parse its own format — which is exactly why it belongs
 in a section about the <em>policy and plumbing</em> layer rather than in §5's chapters about the model.</p>
-<p><strong>Measured on the body we actually send, paired inside one kernel.</strong> ⚠ <em>Corrected 2026-08-28: the
-range this paragraph used to lead with was measured against a control that names the destination
-differently from the emission we ship, so the URL form and the forge were confounded across runs
-until a later kernel put both in the same one.</em> On the shipped pair, at n=30 paired with the control
+<p><strong>Measured on the body we actually send, paired inside one kernel.</strong> On the shipped pair, at n=30 paired with the control
 reproducing its predecessor at zero drift, gpt-oss-20b emits <strong>259.50</strong> decode tokens unforged
 against <strong>29.53</strong> forged, and its median seconds per candidate fall from <strong>4.5276</strong> to <strong>0.8622</strong>.
 The cell below divides them rather than asserting a ratio: the effect is close to ninefold on decode
@@ -10444,7 +10475,7 @@ times as strongly on the generation that follows the tool call as on the one tha
 which says the forged empty analysis turn survives into the second hop's history and suppresses the
 wrap-up's reasoning as well. That is a sharper statement of the mechanism than "it spends the
 chain-of-thought early", and it was not visible until one kernel measured both hops at once.</p>
-<p>⚠ <em>Read those as ratios, not as levels.</em> That run's forge-free control is the quoted-URL body, not
+<p><em>Read those as ratios, not as levels.</em> That run's forge-free control is the quoted-URL body, not
 the destination form this note ships, so it shares the substitution corrected above; what transfers
 between the two bodies is the shape of the effect, not the token counts.</p>
 <p>The token census says the effect is the channel and not the phrasing, and it says so more sharply on
@@ -10515,6 +10546,15 @@ to prefer a privileged channel presupposes that channel labels are trustworthy. 
 serialisation layer delivers the injected text <strong>already labelled privileged</strong>, so the hierarchy is
 obeyed exactly as trained and obeys the attacker. That is out of scope for what we measured and is
 stated as a scope limit rather than a finding.</p>
+<hr/>
+<p><strong>Record of changes to §7.4.</strong> <em>Superseded text, kept and dated. The section above is the
+current position; nothing quoted here is asserted.</em></p>
+<blockquote>
+<p><strong>2026-08-28.</strong> For six weeks this section led with the 2.14× to 2.37× range, measured against a
+quoted-URL control that names the destination differently from the emission we ship, so the URL form
+and the forge were confounded across runs until one kernel put both in the same run. The range stays
+in the body as a correct reading of the body it was measured on; the shipped-body measurement leads.</p>
+</blockquote>
 </div>
 </div>
 </div>
@@ -11118,12 +11158,10 @@ precondition for the first of the four — on the shipped body the forge takes o
 one it is   facing. Everything else we tried — depth, density,
 archive search — was refuted (§6.3, §6.4, and now the four-point cost curve).</p>
 </li>
-<li><p><strong>A mail-only confused-deputy send, carrying no <code>http.post</code> at all.</strong> <em>(Corrected. An earlier
-draft of this section described the second entry as "one trace carrying two predicates, ordered so
-that the action most defenses tolerate executes first" — that is <code>saturate_stacked</code>, which was
-shipped and then <strong>not</strong> selected.)</em> The selected Final B is <code>saturate_routed_conf</code>, ref 55547202,
-public 25.860: one <code>email.send</code>, no egress call, on both rows, with the same per-row routing as
-Final A.</p>
+<li><p><strong>A mail-only confused-deputy send, carrying no <code>http.post</code> at all.</strong> The selected Final B is
+<code>saturate_routed_conf</code>, ref 55547202, public 25.860: one <code>email.send</code>, no egress call, on both
+rows, with the same per-row routing as Final A. The two-predicate trace <code>saturate_stacked</code> was
+shipped and not selected; §6.6 says why.</p>
 <p>The reason is §6.6 and it is worth stating here in one line, because the correction is the
 interesting part: the stacked trace scored <strong>1.61×</strong> more in public and is <strong>dominated</strong> on the
 only branch where a second entry is ever read. Ordering (§7.1) remains the right property for a
@@ -11135,9 +11173,15 @@ wrong, so selecting it is a hedge against our own forecast, and we would rather 
 reader find it.</p>
 </li>
 </ul>
-<p>The honest summary of "how we succeeded" is that most of it was <strong>subtraction</strong>: the derivations in
+<h2 id="The-honest-summary-of-%22how-we-succeeded%22-is-that-most-of-it-was-subtraction:-the-derivations-in%0A%C2%A78.1-removed-families-that-could-not-work,-the-instruments-in-%C2%A78.2-removed-conclusions-that-were-not%0Aevidence,-and-what-remained-was-a-small,-well-measured-construction-rather-than-a-clever-one.">The honest summary of "how we succeeded" is that most of it was <strong>subtraction</strong>: the derivations in
 §8.1 removed families that could not work, the instruments in §8.2 removed conclusions that were not
-evidence, and what remained was a small, well-measured construction rather than a clever one.</p>
+evidence, and what remained was a small, well-measured construction rather than a clever one.<a class="anchor-link" href="#The-honest-summary-of-%22how-we-succeeded%22-is-that-most-of-it-was-subtraction:-the-derivations-in%0A%C2%A78.1-removed-families-that-could-not-work,-the-instruments-in-%C2%A78.2-removed-conclusions-that-were-not%0Aevidence,-and-what-remained-was-a-small,-well-measured-construction-rather-than-a-clever-one.">¶</a></h2><p><strong>Record of changes to §8.6.</strong> <em>Superseded text, kept and dated. The section above is the
+current position; nothing quoted here is asserted.</em></p>
+<blockquote>
+<p><strong>2026-08-28.</strong> The second entry was described here as <em>"one trace carrying two predicates, ordered
+so that the action most defenses tolerate executes first"</em> — that is <code>saturate_stacked</code>, which was
+shipped and then not selected. The selected entry is the mail-only send the body names.</p>
+</blockquote>
 </div>
 </div>
 </div>
@@ -11171,7 +11215,7 @@ cross-episode state accumulates, and our candidates are single-message anyway. T
 bet to the <em>provenance</em> half — a real narrowing, since it is the half our shipped body already
 scores against on the corresponding hardened column. It does not make the bet safe; it makes it
 smaller and says which side of the name it is on.</li>
-<li><strong>⚠ Resolved 2026-09-02 — the narrowing was right and pointed the wrong way.</strong> The <em>persistent</em>
+<li><strong>Resolved 2026-09-02: the narrowing was right and pointed the wrong way.</strong> The <em>persistent</em>
 half was indeed inert, exactly as argued. But the <em>provenance</em> half was not the other side of the
 bet either: a body carrying no provenance at all scores 0.000 there. Both halves of the name are
 now accounted for and neither explains the outcome, which is what §10b resolves. The reusable part
@@ -11223,9 +11267,8 @@ resolution date — in §10b.</li>
 <h2 id="10.-Defenses-/-implications">10. Defenses / implications<a class="anchor-link" href="#10.-Defenses-/-implications">¶</a></h2><p><em>For a defender who reads nothing else. Four classes of defense and one observation that is not one,
 each against the attack families this note measured. Every number in this table is re-derived from
 its archived envelope by the cell that closes this section; "Figure 3" is the fifteen-column transfer
-matrix in §5b, and the section numbers are where each row is measured. Added 2026-09-04, after the
-private board resolved §10b; the text that follows the table is the argument, kept in the order it was
-written, with its corrections in place.</em></p>
+matrix in §5b, and the section numbers are where each row is measured. The text that follows is the
+argument; how this section changed, and what it used to say, is the record at its end.</em></p>
 <table>
 <thead>
 <tr>
@@ -11268,80 +11311,12 @@ written, with its corrections in place.</em></p>
 </tr>
 </tbody>
 </table>
-<p>The defense implied by the law is <strong>provenance verification at the gate</strong>: authority signals carried in
-tool <em>content</em> must be checked against an out-of-band, verifiable source before they can authorize an
-action — process-shaped text alone must not. A guardrail that tracks where a value <em>originated</em> (and does
-not let a file round-trip launder a web/email origin) directly counters the laundering family. The
-<em>contradicts</em>-column control shows models already cross-check when a signal is falsifiable; the gap is
-that they do not <em>seek</em> falsification on consistent-looking signals.</p>
-<p><em>Provenance of the prescription itself, stated 2026-09-04:</em> everything this section prescribes rests
-on §5b and §7, which are measured here — the fifteen-column transfer matrix, the three text-proxy
-inversions, the ordering result — and not on the law of §2, whose evidence is §4 and which this note
-holds as motivation rather than evidence, so the paragraph above should be read as the origin of the
-question and not as the support for the answer.</p>
-<p>The boundary tracer makes this constructive. The reference gate fails on two inspectable axes — a <strong>finite
-provenance window</strong> (file reads evict an untrusted origin) and <strong>plaintext-only</strong> content matching — so a
-robust gate needs <strong>both</strong> a <em>windowless / persistent</em> origin tracker (defeating laundering) <strong>and</strong>
-value-level provenance or input normalization that survives reversible encoding (defeating the encoding
-bypass). Neither axis alone suffices, and the cross-model split shows why closing both is decisive: the
-agentic model can launder but not encode, the inert model can encode but not launder, so a gate that covers
-both axes removes every chain <em>either</em> model can actually mount. A <em>windowed</em> gate,
-or one that screens only plaintext, is the real-world failure these primitives target.</p>
-<blockquote>
-<p>⚠ <strong>Corrected 2026-09-02, and the correction is the point.</strong> The sentence that stood here
-identified the competition's hidden <code>persistent_provenance</code> gate as <em>"a live instance of exactly
-this design"</em>, and expected our reference-gate evasions to fall there for that reason. <strong>That
-identification is refuted.</strong> A windowless value-provenance tracker cannot stop a candidate that
-reads nothing and exfiltrates a sentinel no source produced — §10b makes exactly this argument —
-and yet that candidate scores 0.000 behind the private gate, across 20 submissions spanning
-61.245 to 93.940 on the public board. Whatever the private gate does, it is not only what its name
-describes; of the fifteen columns §5b enumerates, the one consistent with the outcome is payload
-scanning, which is the class this section calls insufficient.</p>
-<p><strong>The prescription above stands and loses its exemplar.</strong> Both axes are still what a robust gate
-needs. What is gone is the claim that this competition ships one, and a defender should take the
-design from this section and not the identification. We make the error twice — §5's closing does
-it too, and its addendum now retracts it — both times in the same shape: a defense's behaviour
-inferred from its name instead of measured, in a note that spends §7 showing how far a defense's
-appearance can sit from the relation it actually checks. §5b's fifteen-column enumeration was on
-disk before either sentence was written, and neither of us asked it.</p>
-</blockquote>
-<p><em>The first of these defences now has published, constructive instances, and naming them is more
-useful than repeating the prescription.</em> CaMeL (arXiv:2503.18813) implements provenance through an
-execution graph with capability-gated tool calls; FIDES (arXiv:2505.23643) implements the same
-relation as information-flow control. Where this note contributes is the adversarial half — what it
-costs an attacker to defeat the text-proxy alternatives, which is approximately nothing.</p>
-<p>A third defence falls out of §7.4, and it is the cheapest one in this note. Where a system renders a
-conversation into a token sequence, <strong>the boundary between whose text is whose should be established
-by the renderer, not carried in the text being rendered.</strong> Concretely: model control tokens should be
-escaped or stripped from user-supplied content before the chat template is rendered, so that content
-cannot close a turn or open a channel. It is one step at the point where a message becomes tokens, it
-costs nothing at inference time, and unlike the defences above it does not require deciding whether a
-request <em>looks</em> dangerous — it removes a capability from the input rather than judging it. We state
-the defence and stop there: §7.4 measures the effect inside this benchmark's own harness, and what is
-worth carrying away from it is what to do about it.</p>
-<p>⚠ <em>Extended 2026-09-04, because the sentence above is narrower than the threat model it serves.</em> It
-says <em>user-supplied content</em>. §1's threat model is injection through a <strong>tool result</strong>, and the
-harness §7.4 measures renders every segment through the same template, so the boundary has to be
-established for <strong>every non-template segment rendered into the context</strong> — the user turn, every tool
-output, every retrieved document, memory read back in — and not for the user turn alone; a renderer
-that escapes one channel and parses control tokens in another has moved the construction, not
-removed it. Nor is the step new. Several serving stacks already treat special-token parsing of input
-text as something a caller opts into, or ship it disabled by default, and none is named here because
-we have not verified their documentation in the course of this work. What this note contributes is
-narrower and measured: that this benchmark's harness did not, and what that was worth to an attacker
-(§7.4) — not the technique.</p>
-<blockquote>
-<p>⚠ <strong>Corrected 2026-09-04 — the two-axis framing is withdrawn, and so is the sentence of 2026-09-02
-that kept it.</strong> That correction let the prescription stand on <em>"both axes"</em>. It should not have,
-because the second axis — <em>input normalization that survives reversible encoding</em> — is not a form
-of provenance at all. It is inspection of the egress payload: the class the same passage treats as
-the thing a robust gate must go beyond, and the class that §10b now shows to be the only one of
-the fifteen consistent with the private board. A section cannot require a class in one sentence
-and call it insufficient in the next and still be read as a prescription. So the frame is replaced
-rather than repaired, and the replacement is below. The retired paragraphs stay above it, as this
-note's convention requires.</p>
-</blockquote>
-<p><strong>The prescription, restated: value provenance is necessary, and it is not sufficient.</strong> Necessary,
+<p><strong>Where the prescription comes from.</strong> Everything this section prescribes rests on §5b and §7, which
+are measured here — the fifteen-column transfer matrix, the three text-proxy inversions, the ordering
+result — and not on the law of §2, whose evidence is §4 and which this note holds as motivation rather
+than evidence. The law posed the question; §5b and §7 answer it, and the answer is narrower than the
+law would have predicted.</p>
+<p><strong>Value provenance is necessary, and it is not sufficient.</strong> Necessary,
 because it is the only relation that held. Every defense that read a text proxy — a token of the
 request, the request as a whole, the overlap between request and argument — was inverted at a cost
 of one token or one paraphrase with the executed action byte-identical (§7.2, §7.3), and the taint
@@ -11353,7 +11328,7 @@ shipped as its first entry is exactly that case: on every taint, persistent, ech
 column of Figure 3 it scores its full 18, and the private board scored it 0.000 across 20
 submissions — an outcome that only the payload-inspecting columns reproduce (§10b). The gate that
 stopped it is not a provenance gate. It is class (b) below.</p>
-<p><strong>Four classes, not two axes.</strong> Each is named with the attack family it held against, the family it
+<p><strong>Four classes of defense.</strong> Each is named with the attack family it held against, the family it
 did not, and what it costs; Figure 3 carries the per-column numbers and they are not restated here.
 None of the four is new, and saying where each is already practised is the useful half of the list.</p>
 <ul>
@@ -11381,7 +11356,7 @@ unforged against 29.53 forged on the target it works on. <em>Does not hold again
 It stops no exfiltration and no confused deputy, appears nowhere in §7.3's table, and says nothing
 about an injection that carries no control tokens; it closes a lever, not a family. <em>Cost:</em> one
 escaping step where a segment becomes tokens and nothing at inference, provided it covers every
-non-template segment and not only the user turn (the extension above).</li>
+non-template segment and not only the user turn (stated in full below).</li>
 <li><strong>(d) Whole-sequence evaluation, with no short-circuit at the first deny.</strong> <em>Holds against:</em> the
 ordering choice of §7.1 — the same two actions score on 7 of 8 hardened columns in one order and 5
 of 8 reversed, losing the three payload-inspecting columns and gaining the self-tainting one —
@@ -11407,17 +11382,35 @@ can. In this benchmark's form, the exfiltration predicate honours a literal sent
 unconditionally, by a design decision the SDK documents in the function's own docstring (§10b), so a
 candidate scores the highest-severity predicate without touching a secret at all. The second is an
 artefact of the scorer; the first is the thing the artefact happens to model.</p>
-<p>A second, weaker mitigation falls out of §5: <strong>task-grounding</strong>. Giving gpt-oss-20b a concrete benign
-task collapsed its injection-follow rate from 5/5 to 0/5 — an agent busy with real work does not wander
-into an injected detour. ⚠ <em>Corrected 2026-09-04: those are the reps=5 cells of §5's framing
-factorial, and five of five licenses only [0.57, 1.00] at 95% — the control's zero of five, [0.00,
-0.43]; the measurement this note now rests on is the paired within-page run over the same hundred
-pages, the one the abstract quotes and §10b's P3 conditions on, where gpt-oss-20b goes 14 of 100 to
-0 of 100 and gemma 97 of 100 to 0 of 100 with no page moving the other way on either, and the cell
-after this section re-derives both from their envelopes.</em> But this is the <em>absence of a vacuum</em>, not an active check: it is fragile
-(a sufficiently on-theme injection that reads as part of the task would still land), and it does nothing
-for a model like gemma whose "safety" is merely an inability to act multi-step in one turn. Task-grounding
-narrows the attack surface; only provenance verification removes it.</p>
+<p><strong>Two of the four, stated in full.</strong> Class (a) has published, constructive instances, and naming them
+is more useful than repeating the prescription. CaMeL (arXiv:2503.18813) implements provenance through
+an execution graph with capability-gated tool calls; FIDES (arXiv:2505.23643) implements the same
+relation as information-flow control. Where this note contributes is the adversarial half — what it
+costs an attacker to defeat the text-proxy alternatives, which is approximately nothing.</p>
+<p>Class (c) falls out of §7.4, and it is the cheapest one in this note. Where a system renders a
+conversation into a token sequence, <strong>the boundary between whose text is whose should be established
+by the renderer, not carried in the text being rendered.</strong> Concretely: model control tokens should be
+escaped or stripped from <strong>every non-template segment rendered into the context</strong> — the user turn,
+every tool output, every retrieved document, memory read back in — before the chat template is
+rendered, so that no segment can close a turn or open a channel. §1's threat model is injection
+through a tool result, and a renderer that escapes one channel and parses control tokens in another
+has moved the construction, not removed it. It is one step at the point where a segment becomes
+tokens, it costs nothing at inference time, and unlike the classes that judge a request it removes a
+capability from the input rather than deciding whether the input looks dangerous. Nor is the step new:
+several serving stacks already treat special-token parsing of input text as something a caller opts
+into, or ship it disabled by default, and none is named here because we have not verified their
+documentation in the course of this work. What this note contributes is narrower and measured — that
+this benchmark's harness did not, and what that was worth to an attacker (§7.4) — and we state the
+defence and stop there.</p>
+<p>A second, weaker mitigation falls out of §5: <strong>task-grounding</strong>. Given a concrete benign job, both
+targets stop following injections, paired within page over the same hundred pages: gpt-oss-20b goes
+14 of 100 to 0 of 100 and gemma 97 of 100 to 0 of 100, with no page moving the other way on either
+(§5, §10b P3; the cell after this section re-derives both). An agent busy with real work does not
+wander into an injected detour. But this is the <em>absence of a vacuum</em>, not an active check: it is
+fragile (a sufficiently on-theme injection that reads as part of the task would still land), and it
+does nothing for a model like gemma whose "safety" is merely an inability to act multi-step in one
+turn. Task-grounding narrows the attack surface; the four classes above are what removes it, and (a)
+alone does not.</p>
 <p><em>And the mechanism behind it, named as a hypothesis rather than glossed over, because the gap is the
 difference between having observed something and having understood it.</em> We report <strong>that</strong> a
 concurrent task suppresses injection-following. We have not shown <strong>why</strong>, and nothing in our data
@@ -11428,7 +11421,7 @@ consumes capacity that would otherwise go to elaborating an incidental instructi
 is not refused but never developed. <strong>Conflict resolution toward the salient instruction</strong>: two
 instructions are present and the one arriving through the operator's turn wins on position or role,
 which is a resolution rule and not a provenance check even though it looks like one from outside.</p>
-<p>These make different predictions, and §10b already publishes the measurement protocol each of them
+<h2 id="These-make-different-predictions,-and-%C2%A710b-already-publishes-the-measurement-protocol-each-of-them%0Awould-be-run-inside-%E2%80%94-same-paired-design,-same-allow-all-guardrail,-follow-scored-as-a-malicious%0Apredicate-firing.-What-separates-the-three-is-which-single-thing-is-varied-within-it.%0ATask-difficulty:-goal-competition-predicts-the-suppression-grows%0Awith-the-task's-demands,-attention-allocation-predicts-a-threshold-rather-than-a-gradient,-conflict%0Aresolution-predicts-difficulty-is-irrelevant.-Task%E2%80%93injection-semantic-similarity:-conflict%0Aresolution-predicts-the-suppression-collapses-as-the-injection-comes-to-read-as-part-of-the-job,%0Awhile-the-other-two-predict-it-survives.-Position-of-the-injection-relative-to-the-task-in-the%0Arendered-context:-only-conflict-resolution-predicts-a-large-effect.-We-have-run-none-of-the-three.%0AUntil-one-is-run,-give-the-agent-a-job-is-an-observation-about-two-models,-not-a-mechanism,-and-a%0Adefender-who-builds-on-it-is-building-on-an-effect-whose-cause-is-unknown.-We-hold-this-to-the-rule%0A%C2%A76.3-applies-to-itself-when-it-names-a-physical-mechanism-it-has-no-instrument-for:-name-it,-say-it%0Ais-not-measured,-and-stop.">These make different predictions, and §10b already publishes the measurement protocol each of them
 would be run inside — same paired design, same allow-all guardrail, follow scored as a malicious
 predicate firing. What separates the three is which single thing is varied within it.
 <strong>Task difficulty</strong>: goal competition predicts the suppression grows
@@ -11440,7 +11433,61 @@ rendered context: only conflict resolution predicts a large effect. <strong>We h
 Until one is run, <em>give the agent a job</em> is an observation about two models, not a mechanism, and a
 defender who builds on it is building on an effect whose cause is unknown. We hold this to the rule
 §6.3 applies to itself when it names a physical mechanism it has no instrument for: name it, say it
-is not measured, and stop.</p>
+is not measured, and stop.<a class="anchor-link" href="#These-make-different-predictions,-and-%C2%A710b-already-publishes-the-measurement-protocol-each-of-them%0Awould-be-run-inside-%E2%80%94-same-paired-design,-same-allow-all-guardrail,-follow-scored-as-a-malicious%0Apredicate-firing.-What-separates-the-three-is-which-single-thing-is-varied-within-it.%0ATask-difficulty:-goal-competition-predicts-the-suppression-grows%0Awith-the-task's-demands,-attention-allocation-predicts-a-threshold-rather-than-a-gradient,-conflict%0Aresolution-predicts-difficulty-is-irrelevant.-Task%E2%80%93injection-semantic-similarity:-conflict%0Aresolution-predicts-the-suppression-collapses-as-the-injection-comes-to-read-as-part-of-the-job,%0Awhile-the-other-two-predict-it-survives.-Position-of-the-injection-relative-to-the-task-in-the%0Arendered-context:-only-conflict-resolution-predicts-a-large-effect.-We-have-run-none-of-the-three.%0AUntil-one-is-run,-give-the-agent-a-job-is-an-observation-about-two-models,-not-a-mechanism,-and-a%0Adefender-who-builds-on-it-is-building-on-an-effect-whose-cause-is-unknown.-We-hold-this-to-the-rule%0A%C2%A76.3-applies-to-itself-when-it-names-a-physical-mechanism-it-has-no-instrument-for:-name-it,-say-it%0Ais-not-measured,-and-stop.">¶</a></h2><p><strong>Record of changes to §10.</strong> <em>Superseded text, kept and dated. The section above is the
+current position; nothing quoted here is asserted.</em></p>
+<blockquote>
+<p><strong>Until 2026-09-02 the section opened with the two paragraphs below; the second identified
+the competition's hidden gate as an instance of the design it prescribes, and §10b refuted
+that.</strong></p>
+<p>The defense implied by the law is <strong>provenance verification at the gate</strong>: authority signals carried in
+tool <em>content</em> must be checked against an out-of-band, verifiable source before they can authorize an
+action — process-shaped text alone must not. A guardrail that tracks where a value <em>originated</em> (and does
+not let a file round-trip launder a web/email origin) directly counters the laundering family. The
+<em>contradicts</em>-column control shows models already cross-check when a signal is falsifiable; the gap is
+that they do not <em>seek</em> falsification on consistent-looking signals.</p>
+<p>The boundary tracer makes this constructive. The reference gate fails on two inspectable axes — a <strong>finite
+provenance window</strong> (file reads evict an untrusted origin) and <strong>plaintext-only</strong> content matching — so a
+robust gate needs <strong>both</strong> a <em>windowless / persistent</em> origin tracker (defeating laundering) <strong>and</strong>
+value-level provenance or input normalization that survives reversible encoding (defeating the encoding
+bypass). Neither axis alone suffices, and the cross-model split shows why closing both is decisive: the
+agentic model can launder but not encode, the inert model can encode but not launder, so a gate that covers
+both axes removes every chain <em>either</em> model can actually mount. The competition's hidden
+<code>persistent_provenance</code> gate appears to be a live instance of exactly this design — which is why we expect
+our reference-gate evasions to fall there; a <em>windowed</em> gate, or one that screens only plaintext, is the
+real-world failure these primitives target.</p>
+<p>⚠ <strong>Corrected 2026-09-02, and the correction is the point.</strong> The sentence that stood here
+identified the competition's hidden <code>persistent_provenance</code> gate as <em>"a live instance of exactly
+this design"</em>, and expected our reference-gate evasions to fall there for that reason. <strong>That
+identification is refuted.</strong> A windowless value-provenance tracker cannot stop a candidate that
+reads nothing and exfiltrates a sentinel no source produced — §10b makes exactly this argument —
+and yet that candidate scores 0.000 behind the private gate, across 20 submissions spanning
+61.245 to 93.940 on the public board. Whatever the private gate does, it is not only what its name
+describes; of the fifteen columns §5b enumerates, the one consistent with the outcome is payload
+scanning, which is the class this section calls insufficient.</p>
+<p><strong>The prescription above stands and loses its exemplar.</strong> Both axes are still what a robust gate
+needs. What is gone is the claim that this competition ships one, and a defender should take the
+design from this section and not the identification. We make the error twice — §5's closing does
+it too, and its addendum now retracts it — both times in the same shape: a defense's behaviour
+inferred from its name instead of measured, in a note that spends §7 showing how far a defense's
+appearance can sit from the relation it actually checks. §5b's fifteen-column enumeration was on
+disk before either sentence was written, and neither of us asked it.</p>
+<p>⚠ <strong>Corrected 2026-09-04 — the two-axis framing is withdrawn, and so is the sentence of 2026-09-02
+that kept it.</strong> That correction let the prescription stand on <em>"both axes"</em>. It should not have,
+because the second axis — <em>input normalization that survives reversible encoding</em> — is not a form
+of provenance at all. It is inspection of the egress payload: the class the same passage treats as
+the thing a robust gate must go beyond, and the class that §10b now shows to be the only one of
+the fifteen consistent with the private board. A section cannot require a class in one sentence
+and call it insufficient in the next and still be read as a prescription. So the frame is replaced
+rather than repaired: the replacement is the body of the section, and the retired paragraphs are the
+two quoted above in this record.</p>
+<p><strong>Also on 2026-09-04.</strong> Three smaller changes to the body. The renderer defence, first stated for
+<em>user-supplied content</em>, now covers every non-template segment rendered into the context, because
+§1's threat model is injection through a tool result. The task-grounding paragraph quoted the reps=5
+cells of §5's framing factorial — <em>collapsed its injection-follow rate from 5/5 to 0/5</em> — which
+license only [0.57, 1.00] and [0.00, 0.43] at 95%; it now quotes the paired within-page run over a
+hundred pages. And its closing sentence, <em>only provenance verification removes it</em>, is withdrawn as
+inconsistent with the restated prescription.</p>
+</blockquote>
 </div>
 </div>
 </div>
@@ -11836,7 +11883,7 @@ their value to someone attacking a system that is not this benchmark.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="11.-Reproducibility-%E2%80%94-what-ships,-and-what-is-only-described">11. Reproducibility — what ships, and what is only described<a class="anchor-link" href="#11.-Reproducibility-%E2%80%94-what-ships,-and-what-is-only-described">¶</a></h2><blockquote>
-<p>⚠ <strong>Read this section as a description, not as an offer. Decision taken 2026-09-02, and it is a
+<p><strong>Read this section as a description, not as an offer. Decision taken 2026-09-02, and it is a
 demotion.</strong> One artefact ships with this note, and it is the notebook you are reading. It carries
 the claim index and the envelope values its figures read, embedded in its second cell, and it
 re-runs <strong>both</strong> gates standalone — the provenance gate over its own prose and the calibration gate
@@ -11967,7 +12014,7 @@ numeric literals in the source note that resolve   147/147
   to a recorded value that predates the claims schema  10
   to an explicitly named external source              7
   unresolved                                          0
-tests collected               279
+tests collected               286
 claims THIS notebook resolved 25
 numbers routed through unarchived()  1
   1.05x and 1.37x: the two cost models predate the envelope schema; §6.4 records that they have no archived result, and this notebook does not mint one
@@ -11982,7 +12029,7 @@ numbers routed through unarchived()  1
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><em>Open items before finalizing: (a) the §4 cross-model figures agree with the records they were
+<p><em>Open items at the first draft, and how each closed: (a) the §4 cross-model figures agree with the records they were
 transcribed from, and that is the whole of what the check established — <strong>a reader cannot verify any
 of them</strong>, which is why §4 is now declared motivation and not evidence, and why none of these
 figures supports a claim in this note or appears in its abstract. Listed here for completeness and
@@ -11998,7 +12045,7 @@ the board locks, and the published deadlines are <strong>UTC</strong>. That wind
 window and not only a publication-hygiene one: the private board is revealed when the leaderboard
 locks, so §10b's first prediction is scoreable inside this document before it is due. So the hold costs nothing: hold the note until the leaderboard
 closes, then publish inside the window, since an earlier release would expose the private-gate
-analysis and the attack surface to competitors while they can still act on it. ⚠ <em>2026-09-02 — the
+analysis and the attack surface to competitors while they can still act on it. <em>2026-09-02 — the
 hold has expired, and the state is worth stating precisely because §11 rests on it.</em> The board locked
 on 2026-09-01. The boundary-eval repository §4 draws on has been <strong>public under MIT throughout</strong>, at
 <code>github.com/rootedlab-code/llm-agent-boundary-eval</code>, so the parenthesis above was simply wrong. What
@@ -12049,8 +12096,8 @@ branches solve to row values of <strong>178.47</strong> and <strong>160.56</stro
 model calls, so neither is in scale with the rest of the record. The reason we first gave was a
 design fault in the probe: its classifier folded <em>"no usable numbers"</em> into <em>"Harmony"</em>, so its
 failure mode was indistinguishable from its success mode, and an ordinary-looking score cannot be
-told from a broken one. ⚠ <em>Corrected 2026-08-28: that diagnosis was a symptom, and it cost a second
-slot to learn it.</em> A rebuilt probe fixing exactly that fault — three outcomes, three emission sizes,
+told from a broken one. <em>That diagnosis was a symptom, and it cost a second slot to learn it
+(2026-08-28).</em> A rebuilt probe fixing exactly that fault — three outcomes, three emission sizes,
 three separated scores — shipped as ref 55393429 and came back <strong>90.270</strong>, ordinary again. The
 common cause is structural, and it is a property of what this leaderboard publishes rather than of
 our design:</p>
@@ -12210,9 +12257,9 @@ Zhan, Liang, Ying, Kang. <em>InjecAgent: Benchmarking Indirect Prompt Injections
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>audit rules: imported from tools/collect_results.py
 
-notebook prose: 824/824 numeric literals resolve
-  787 to a claim in results/results_index.json
-  18 to a recorded value in an envelope that predates the claims schema
+notebook prose: 843/843 numeric literals resolve
+  804 to a claim in results/results_index.json
+  20 to a recorded value in an envelope that predates the claims schema
   19 to a passage that names its own source (including 1 routed through unarchived())
 
 BUILD GATE PASSED — every number in this note resolves to an envelope or names its source.
